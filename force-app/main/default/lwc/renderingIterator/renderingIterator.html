@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Complex object loading" icon-name="custom:custom2">
+        <div class="slds-var-p-around_small">
+            <template iterator:it={contactList}>
+                <div key={it.value.id}>
+                    <div lwc:if={it.firstname} class="list-first"></div>
+                    <p>{it.value.firstname} {it.value.lastname}</p>
+                    <div lwc:if={it.lastname} class="list-last"></div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

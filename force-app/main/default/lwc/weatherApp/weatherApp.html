@@ -1,0 +1,52 @@
+<template>
+    <div class="app">
+        <div class="app-card">
+            <header>
+                <template if:true={response}>
+                    <img src={arrowbackIcon} alt="back arrow" onclick={backhandler} class="slds-m-right medium cursor" />
+                </template>
+                <h1> Weather Channel</h1>
+            </header>
+            <template if:true={loadingtext}>
+            <div class={loadingclass}>{loadingtext}</div>
+            </template>
+            <section class="slds-m-around_large">
+                <form onsubmit={submitHandler}>
+                    <input text="Text" placeholder="Enter the city name" required spellcheck="false"
+                    onkeyup={searchHandler} />
+                    <button type="submit" class="slds-m-top_large"> Search</button>
+                </form>
+            </section>
+            <template if:true={response}>
+            <section class="slds-m-around_large text-center">
+                <img src={weatherIcon} alt="cloud Icon" class="weatherimg"/>
+                <div class="temperature">
+                    <span>{response.temperature}</span>
+                    <span>°</span>C
+                </div>
+                <div class="description">clear sky</div>
+                <div class="location">
+                    <img src={mapIcon} alt="location Icon"/>
+                    <span>{response.location}</span>
+                </div>
+            </section>
+            <footer>
+                <div class="feelslike">
+                    <div>
+                        <img src={thermometerIcon} alt="thermometer Icon"/>
+                        <div>{response.feels_like}°C</div>
+                        <p>Feels like</p>
+                    </div>
+                    </div>
+                <div class="humidity">
+                    <div>
+                        <img src={dropletIcon} alt="droplet Icon"/>
+                    <div>{response.humidity}</div>
+                    </div>
+                        <p>Humidity</p>
+                    </div>
+            </footer>
+        </template>
+        </div>
+    </div>
+</template>

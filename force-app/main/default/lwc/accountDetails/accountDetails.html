@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Account details" icon-name="custom:custom12">
+        <lightning-combobox
+        name="parentacc"
+        label="Select the parent account"
+        placeholder="Select Parent Account"
+        options={Parentaccount}
+        onchange={handleChange} >
+        </lightning-combobox>
+        <lightning-input name="accname"
+        label="Enter the account name"
+        onchange={handleChange}>
+
+        </lightning-input>
+    </lightning-card>
+</template>

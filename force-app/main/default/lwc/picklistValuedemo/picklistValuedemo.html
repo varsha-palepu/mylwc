@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Picklist">
+        <template lwc:if={industrypicklist.data}>
+            <lightning-combobox
+                name="Progress"
+                label="Industry"
+                value={value}
+                placeholder="Select Industry"
+                options={industrypicklist.data.values}
+                onchange={handleChange} >
+            </lightning-combobox>
+        <p>Selected value is: {value}</p>
+    </template>
+    </lightning-card>
+</template>

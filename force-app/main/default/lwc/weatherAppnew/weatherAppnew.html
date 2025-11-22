@@ -1,0 +1,15 @@
+<template>
+    <lightning-card
+     label="Weather Details" class="slds-var-p-around_small">
+     <div class="slds-var-p-around_small">
+        <lightning-input label="Enter the city" onchange={changeHandler}></lightning-input>
+     </div>
+     <div class="slds-var-p-around_small">
+        <lightning-button label="Get weather details" onclick={clickHandler}></lightning-button>
+     </div>
+     <div class="slds-var-p-around_small">
+      current temperature:{temperature}
+    </div>
+    </lightning-card>
+   
+</template>

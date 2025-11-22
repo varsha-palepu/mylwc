@@ -1,0 +1,6 @@
+<apex:page docType="html-5.0"  sidebar="false" showHeader="false">
+    <apex:form >
+        <apex:input label="Name">
+        </apex:input>
+    </apex:form>
+</apex:page>

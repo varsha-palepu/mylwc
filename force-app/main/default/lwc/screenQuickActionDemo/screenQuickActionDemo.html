@@ -1,0 +1,16 @@
+<template>
+    <lightning-quick-action-panel header="Screen quick action">
+        <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName} onsuccess={successHandler} >
+            <div class="slds-m-around-small">
+                <lightning-input-field 
+                field-name={fields.accountName}></lightning-input-field>
+                <lightning-input-field 
+                field-name={fields.accountIndustry}></lightning-input-field>
+            </div>
+            
+            <lightning-button label="Save" variant="brand" type="success" class="slds-p-around_small"></lightning-button>
+            <lightning-button label="Cancel" variant="brand" onclick={closeModel}>
+            </lightning-button>
+        </lightning-record-edit-form>
+    </lightning-quick-action-panel>
+</template>

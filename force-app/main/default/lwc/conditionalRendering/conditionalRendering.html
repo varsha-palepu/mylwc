@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Conditional rendering" icon-name="custom:custom12">
+        <div class="slds-var-m-around_medium">
+        <lightning-input 
+        type="checkbox"
+        label="displayuser"
+        onchange={changehandler}
+        name="input 1"
+        ></lightning-input>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={displayMessage}>
+                <p>The user is eligible for discount</p>
+            </template>
+            <template lwc:else>
+                <p>The user is not eligible for discount</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

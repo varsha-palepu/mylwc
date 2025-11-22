@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+    <div class="alarm-class">
+        <h1>Alarm Clock</h1>
+        <img src={clockimg} alt="clock" height="200px" width="200px" class={shakeimage} />
+        <h2>{currenttime}</h2>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+             <c-clock-drop-down label="Hour(s)" options={hours} unique-id="select-hours" onoptionhandler={optionHandler}></c-clock-drop-down>
+            </div>
+            <div class="slds-col">
+                
+                <c-clock-drop-down label="Minute(s)" options={minutes} unique-id="select-minutes" onoptionhandler={optionHandler} ></c-clock-drop-down>
+            </div>
+            <div class="slds-col">
+                <c-clock-drop-down label="AM/PM" options={meridians} unique-id="select-meridians" onoptionhandler={optionHandler} ></c-clock-drop-down>
+            </div>
+        </div>
+        <template if:false={alarmset}>
+        <button class="slds-button slds-button_neutral slds-button_stretch" disabled={isfieldnotselected}
+        onclick={setalarmhandler}>Set Alarm</button>
+       </template>
+        <template if:true={alarmset}>
+        <button class="slds-button slds-button_neutral slds-button_stretch" 
+        onclick={clearalarmhandler}>Clear Alarm</button>
+    </template>
+    </div>
+    </lightning-card>
+</template>

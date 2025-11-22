@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:16px;
+    min-height: 100vh;  
+}
+.custom-card{
+    max-width:520px;
+    min-width: 320px;
+    border-radius: 25px;
+    padding:16px;
+    background: #0b2451;
+}
+.custom-button, .custom-button:hover, .custom-button:active{
+    background: #f9ba49;
+    color:#0c2451;
+    padding:12px;
+    font-size: 24px;
+    margin-top:12px;
+}
+.basline{
+    align-items: baseline;
+}
+img{
+    display: block;
+    margin:auto;
+    margin-bottom: 12px;
+}
+.Currency-convertorApp{
+    background: url(/sfsites/c/resource/currencyConverterAssets/currencyConverterAssets/currencyAppBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.custom-hooks{
+    --slds-c-icon-color-background: #f9ba49;
+    --slds-c-icon-color-foreground-default: #0b2451;
+    --slds-c-icon-color-foreground: #0b2451;
+    transform: rotate(45deg);
+}
+.result{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:rgb(10, 163, 214)
+}
+.result-to{
+    color:rgb(251, 182, 9)
+}

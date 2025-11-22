@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Conditional rendering" icon-name="custom:custom9">
+        <div class="slds-var-p-around_small">
+        <lightning-input type="checkbox" 
+        label="Sajida father accepted"
+         name="input1"
+         onchange={changeHandler}
+         ></lightning-input>  
+        </div>
+        <div class="slds-var-p-around_small">
+            <template lwc:if={displayMessage}>
+                <p>Welcome deva to marry sajida</p>
+            </template>
+            <template lwc:else>
+                <p>Sajida packed her things to come to pondy to marry deva</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

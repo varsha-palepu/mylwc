@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Name of the stars" icon-name="custom:custom13">
+        <div class="slds-var-p-around_small">
+            <template for:each={stars} for:item="star">
+                <p key={star}>{star}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

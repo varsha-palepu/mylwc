@@ -1,0 +1,51 @@
+.box{
+    max-width: 420px;
+    text-align: center;
+    margin: auto;
+    background: greenyellow;
+    color: white;
+    padding: 16px;
+    border-radius: 38px;
+}
+.app{
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/bmibackgroundimage);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 36px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.inner-wrapper{
+    background: #1d1e33;
+    padding: 16px;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    font-size: 16px;
+    text-align: center;
+}
+h2{
+    font-size: 26px;
+    color: lightpink;
+}
+label{
+    font-size: 20px;
+    color: black;
+}
+input{
+    color :#1d1e33;
+    padding: 8px;
+    font-size: 16px;
+}
+button{
+    font-size: 16px;
+    color: black;
+    background-color: pink;
+    padding: 20px;
+}
+.result-class{
+    font-size: 26px;
+    color: darkblue;
+}

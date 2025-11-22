@@ -1,0 +1,9 @@
+.incompeletebg{
+    background-color: rgb(244, 244, 12);
+}
+.completebg{
+    background-color: lime;
+}
+.formattaskname{
+    font-size: large;
+}
