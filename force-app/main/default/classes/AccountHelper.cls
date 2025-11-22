@@ -10,8 +10,9 @@ public with sharing class AccountHelper {
    @AuraEnabled
    // TODO: implement additional validations or logging for updateTicker
    //--hasvcg
+   // TODO: add error handling details here
    public static String updateTicker(String recordId,String tickersymbol){
-      Account acc =new Account(Id=recordId,TickerSymbol=tickersymbol);
+      // Account acc =new Account(Id=recordId,TickerSymbol=tickersymbol);
       try{
          update acc;
          return 'Success';
